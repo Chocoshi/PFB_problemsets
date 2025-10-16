@@ -95,23 +95,39 @@
 
 
 
-import sys
+# import sys
 
-minimum = int(sys.argv[1])
-maximum = int(sys.argv[2])
+# minimum = int(sys.argv[1])
+# maximum = int(sys.argv[2])
 
-for num in range (minimum, maximum+1):
-    print(num)
+# for num in range (minimum, maximum+1):
+#     print(num)
 
-list1 = []
-for num in range (minimum, maximum+1):
-    list1.append (num)
-print(list1)
+# list1 = []
+# for num in range (minimum, maximum+1):
+#     list1.append (num)
+# print(list1)
 
-list2 =[]
-for num in range (minimum, maximum+1):
-    if num % 2 != 0:
-        list2.append (num)
-print(list2)
+# list2 =[]
+# for num in range (minimum, maximum+1):
+#     if num % 2 != 0:
+#         list2.append (num)
+# print(list2)
+
+list3a = []
+list3 = ['ATGCCCGGCCCGGC','GCGTGCTAGCAATACGATAAACCGG', 'ATATATATCGAT','ATGGGCCC']
+for seq in list3:
+    #list3a.append(len(seq))
+    print (f'{len(seq)}\t{seq}')
+
+for seq in list3:
+    print (f'{list3.index(seq)}\t{len(seq)}\t{seq}')
+
+list3b = sorted (list3, key = len, reverse = True)
+print(list3b)
+
+for seq in list3b:
+    print (seq)
+
 
 
