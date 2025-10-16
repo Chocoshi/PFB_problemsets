@@ -70,3 +70,20 @@ for num in loopy:
     if num % 2 == 0: 
         even.append (num)
 print (even)
+
+loopy.sort()
+print(loopy)
+
+
+sum = 0
+sum2 = 0
+for num in loopy:
+    print(num)
+for num in loopy:
+    if num % 2 == 0:
+        sum += num
+    else:
+        sum2 += num
+print(sum)
+print(sum2)
+
