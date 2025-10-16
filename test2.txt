@@ -1,0 +1,6 @@
+
+ttgctactatgttttcatttttggagttc
+c0_g1_i1,
+ttgctactatgttttcatttttggagttc
+
+1_g1_i1,
