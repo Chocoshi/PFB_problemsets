@@ -103,4 +103,15 @@ maximum = int(sys.argv[2])
 for num in range (minimum, maximum+1):
     print(num)
 
+list1 = []
+for num in range (minimum, maximum+1):
+    list1.append (num)
+print(list1)
+
+list2 =[]
+for num in range (minimum, maximum+1):
+    if num % 2 != 0:
+        list2.append (num)
+print(list2)
+
 
