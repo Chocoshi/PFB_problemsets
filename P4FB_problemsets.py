@@ -64,26 +64,43 @@
 #     factorial *= number  
 # print(f'factorial: {factorial}')
 
-even = []
-loopy = [101,2,15,22,95,33,2,27,72,15,52]
-for num in loopy:
-    if num % 2 == 0: 
-        even.append (num)
-print (even)
+# even = []
+# loopy = [101,2,15,22,95,33,2,27,72,15,52]
+# for num in loopy:
+#     if num % 2 == 0: 
+#         even.append (num)
+# print (even)
 
-loopy.sort()
-print(loopy)
+# loopy.sort()
+# print(loopy)
 
 
-sum = 0
-sum2 = 0
-for num in loopy:
+# sum = 0
+# sum2 = 0
+# for num in loopy:
+#     print(num)
+# for num in loopy:
+#     if num % 2 == 0:
+#         sum += num
+#     else:
+#         sum2 += num
+# print(sum)
+# print(sum2)
+
+# problemset8_list2 = [num for num in range(100)]
+# print(problemset8_list2)
+
+# problemset8_list = [ num + 1 for num in range(100)]
+# print(problemset8_list)
+
+
+
+import sys
+
+minimum = int(sys.argv[1])
+maximum = int(sys.argv[2])
+
+for num in range (minimum, maximum+1):
     print(num)
-for num in loopy:
-    if num % 2 == 0:
-        sum += num
-    else:
-        sum2 += num
-print(sum)
-print(sum2)
+
 
