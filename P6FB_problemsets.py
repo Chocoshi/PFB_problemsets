@@ -25,31 +25,28 @@
 #     print ("Wrote 'Python_06_uc.txt'")
  
 
-with open ("test.txt","r") as test_read:
-    for line in test_read:
-        test_list = line.split('\t')
-        nt_new = test_list[1].replace ('A','t').replace('T','a').replace('C','g').replace('G','c')
-        nt_new_reverse = nt_new[::-1]
-        print (nt_new_reverse) 
-        print(f'{test_list[0]},{nt_new_reverse}')
-
-        
+# with open ("test.txt","r") as test_read:
+#     for line in test_read:
+#         test_list = line.split('\t')
+#         nt_new = test_list[1].replace ('A','t').replace('T','a').replace('C','g').replace('G','c')
+#         nt_new_reverse = nt_new[::-1]
+#         print (nt_new_reverse) 
+#         print(f'{test_list[0]},{nt_new_reverse}')
 
 
+# count = 0
+# with open ('Python_06.fastq.txt','r') as python6_read2:
+#     for line in python6_read2:
+#         if line.startswith('@'):
+#             count += 1
+#             print(count)
+
+count = 0
+with open ('Python_06.fastq_test.txt','r') as python6_read2:
+    for line in python6_read2:
+        if line.startswith('@'):
+            count += 1
+            print(count)
 
 
-            # if nt == 'A':
-            #     nt_new = 't'
-            
-        #     if nt == 'T':
-        #         nt_new = 'a'
-        #     if nt == 'C':
-        #         nt_new = 'g'
-        #     if nt == 'G':
-        #         nt_new = 'c'
-        # print (test_list)
-
-
-
-    
 
