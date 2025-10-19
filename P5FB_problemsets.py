@@ -12,7 +12,7 @@ dictionary1 = {'book': 'Jitterbug Perfume', 'song': 'Tom Petty - I Wont Back Dow
 # dictionary1['organism'] = 'dog'
 # print(dictionary1)
 
-# for key in dictionary1:
+for key in dictionary1:
 #     print(f'{key}: {dictionary1[key]}')
 
 # import sys
@@ -20,4 +20,5 @@ dictionary1 = {'book': 'Jitterbug Perfume', 'song': 'Tom Petty - I Wont Back Dow
 # fav_thing = sys.argv[1]
 # print(dictionary1[fav_thing])
 
-input (dictionary1)
+file = input (dictionary1[key])
+
