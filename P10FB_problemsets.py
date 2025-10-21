@@ -42,20 +42,39 @@ import re
 
 import sys
 
-def two_command_arguments(fasta_filename, max_line_length):
+# def two_command_arguments(fasta_filename, max_line_length):
+#     with open (fasta_filename, "r") as read1:
+#         var3 = ''
+#         total_seq = ''
+#         max_line_length = int(max_line_length)
+#         for line in read1:
+#             line = line.rstrip() 
+#             total_seq += line
+#         for i in range(0,len(total_seq),max_line_length):
+#             var3 += total_seq[i:i+max_line_length] + "\n"
+#     return var3
+
+# fasta_filename = sys.argv[1]
+# max_line_length = sys.argv[2]
+
+# print(two_command_arguments(fasta_filename, max_line_length))
+
+def two_command_line(fasta_filename, max_line_length):
     with open (fasta_filename, "r") as read1:
-        var3 = ''
         total_seq = ''
+        total_seq2 = ''
         max_line_length = int(max_line_length)
         for line in read1:
             line = line.rstrip() 
             total_seq += line
         for i in range(0,len(total_seq),max_line_length):
-            var3 += total_seq[i:i+max_line_length] + "\n"
-    return var3
+            total_seq2 += total_seq[i:i+max_line_length] + "\n"
+    return total_seq2
 
 fasta_filename = sys.argv[1]
 max_line_length = sys.argv[2]
 
-print(two_command_arguments(fasta_filename, max_line_length))
+print(two_command_line(fasta_filename, max_line_length))
+
+#Created a file named fasta.test.txt that has contains the INPUT from P10q3.
 
