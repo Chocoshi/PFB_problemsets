@@ -78,3 +78,5 @@ print(two_command_line(fasta_filename, max_line_length))
 
 #Created a file named fasta.test.txt that has contains the INPUT from P10q3.
 
+
+

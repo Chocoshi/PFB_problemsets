@@ -49,11 +49,17 @@ from Bio import SeqIO
 #     for codon_py08 in re.findall(r"(.{3})", sequence_py08):
 #         print(codon_py08)
    
+# filename = "Python_08.fasta.txt"
+# for seq_record in SeqIO.parse(filename,"fasta"):
+#     sequence_py08 = str(seq_record.seq)
+#     for start in range(3):
+#         codon_list = re.findall(r"(.{3})", sequence_py08[start:])
+#         codon_string = " ".join(codon_list)
+#         print(f'{seq_record.id}-frame-{start+1}-codons\n{codon_string}')
+
 filename = "Python_08.fasta.txt"
 for seq_record in SeqIO.parse(filename,"fasta"):
     sequence_py08 = str(seq_record.seq)
-    for start in range(3):
-        codon_list = re.findall(r"(.{3})", sequence_py08[start:])
-        codon_string = " ".join(codon_list)
-        print(f'{seq_record.id}-frame-{start+1}-codons\n{codon_string}')
+    reversed_sequence_py08 = sequence_py08[::-1]
+    
         
