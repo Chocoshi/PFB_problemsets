@@ -62,6 +62,7 @@ def main():
         kmers = sequence_to_kmer_list(seq, kmer_length)
         all_kmers.extend(kmers)
         # do not use append to avoid list of list
+        # kmer is a list
         
 
 
@@ -76,6 +77,7 @@ def main():
     )  # see step 2 above. You implement this. :-)
 
 
+
     unique_kmers = list(kmer_count_dict.keys())
 
     #########################
@@ -84,8 +86,8 @@ def main():
     ## begin your code       hint: see the built-in 'sorted' method documentation
 
 
-
-
+    sorted_unique_kmer = sorted(kmer_count_dict.items(), key = lambda t: t[1], reverse = True)
+    print(sorted_unique_kmer)
 
 
 
